@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -29,7 +28,6 @@ export default function RootLayout({
                 className={`${geistSans.variable} ${geistMono.variable} antialiased`}
             >
                 <div className="p-2 bg-amber-900">
-                    <h1 className="text-2xl font-bold">Root Layout</h1>
                     {children}
                 </div>
             </body>
