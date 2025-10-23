@@ -10,10 +10,10 @@ export default function SettinsLayout({children}: {children: React.ReactNode}) {
                     <nav>
                         <ul className="flex flex-col gap-2">
                             <li className="bg-white p-2 rounded-lg hover:bg-gray-200 cursor-pointer text-black">
-                                <Link href="/dashboard/settings">General</Link>
+                                <Link href="/settings">General</Link>
                             </li>
                             <li className="bg-white p-2 rounded-lg hover:bg-gray-200 cursor-pointer text-black">
-                                <Link href="/dashboard/settings/profile">Profile</Link>
+                                <Link href="/settings/profile">Profile</Link>
                             </li>
                         </ul>
                     </nav>

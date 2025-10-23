@@ -32,7 +32,7 @@ export default function RootLayout({
                         <Link href={'/'}>Home</Link>
                     </li>
                     <li>
-                        <Link href={'dashboard/settings'}>Settings</Link>
+                        <Link href={'/settings'}>Settings</Link>
                     </li>
                     <li>
                         <Link href={'/dashboard'}>Blog</Link>
