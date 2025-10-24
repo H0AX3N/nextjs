@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,6 +14,7 @@ export default function Home() {
                     <li><Link href="/blog">Blog</Link></li>
                     <li><Link href="/dashboard">Dashboard</Link></li>
                     <li><Link href="/settings">Settings</Link></li>
+                    <li><Link href="/login">Login</Link></li>
                 </ul>
             </nav>
             <p>Welcome to the home page!</p>

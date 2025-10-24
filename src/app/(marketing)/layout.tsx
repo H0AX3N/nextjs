@@ -20,23 +20,29 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
     children,
+    auth
 }: Readonly<{
-    children: React.ReactNode;
+    children: React.ReactNode,
+    auth: React.ReactNode
 }>) {
     return (
         <div className="p-2 bg-amber-900">
             <h1 className="text-2xl font-bold">(Marketing) Layout</h1>
             <nav className="bg-red-400 p-4 rounded-md">
-                        <ul className="flex gap-2">
-                            <li>
-                                <Link href={'/'}>Home</Link>
-                            </li>
-                            <li>
-                                <Link href={'/blog'}>Blog</Link>
-                            </li>
-                        </ul>
-                    </nav>
+                <ul className="flex items-center gap-2">
+                    <li>
+                        <Link href={'/'}>Home</Link>
+                    </li>
+                    <li>
+                        <Link href={'/blog'}>Blog</Link>
+                    </li>
+                    <li>
+                        <Link href={'/login'}>Login</Link>
+                    </li>
+                </ul>
+            </nav>
             {children}
+            {auth}
         </div>
     );
 }
